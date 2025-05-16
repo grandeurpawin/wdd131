@@ -35,6 +35,7 @@ main{
     grid-template-columns: 6fr 2fr;
     justify-items: center;
     margin-top: 20px;
+    max-width: 100%;
 }
 section{
     width: 95%;
