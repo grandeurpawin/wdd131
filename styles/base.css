@@ -1,0 +1,68 @@
+body{
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+}
+
+h1{
+     font-weight: 700;
+     background-color: rgb(24, 64, 102);
+     color: white;
+     width: 100%;
+     padding: 15px;
+      margin: 0;
+     text-align: center;   
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 15px;
+    background-color: rgb(54, 54, 54);
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 6fr 2fr;
+    justify-items: center;
+    margin-top: 20px;
+}
+section{
+    width: 95%;
+    border-radius: 20px;
+    border: 1px solid rgb(24, 64, 102);
+}
+section h2{
+    font-weight: 700;
+    background-color: rgb(24, 64, 102);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+section img{
+    padding: 15px;
+}
+
+section p{
+    padding: 10px;
+}
+
+footer{
+    font-weight: 400;
+     background-color: rgb(24, 64, 102);
+     color: white;
+     width: 100%;
+     padding: 2px;
+      margin-top: 10px;
+     text-align: center; 
+}
