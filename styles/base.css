@@ -28,34 +28,62 @@ nav a{
 
 nav a:hover{
     text-decoration: underline;
+    font-weight: 700;
 }
 
 main{
     display: grid;
     grid-template-columns: 6fr 2fr;
-    justify-items: center;
+    justify-content: center;
     margin-top: 20px;
     max-width: 100%;
 }
-section{
+.card{
     width: 95%;
+    height: 500px;
     border-radius: 20px;
     border: 1px solid rgb(24, 64, 102);
+    margin: 10px 0 0 0;
 }
 section h2{
     font-weight: 700;
     background-color: rgb(24, 64, 102);
     color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     padding: 10px;
+    margin: 0;
     text-align: center;
 }
 
-section img{
-    padding: 15px;
+section h3{
+    text-align: center;
 }
 
-section p{
-    padding: 10px;
+ section p{
+    padding: 20px 0 20px 20px;
+}
+
+img{
+    padding: 20px;
+}
+
+.content-1{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+.content-2{
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+
+section em{
+    position: absolute;
+    bottom: 250px;
+    left: 10px;
 }
 
 footer{
