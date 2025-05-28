@@ -1,0 +1,94 @@
+
+body {
+    font-family: "Playfair Display", serif;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    background-color: rgb(112, 160, 214);
+    color: aliceblue;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 35px;
+}
+
+
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❌";
+}
+
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	list-style: none;
+	font-size: 30px;
+}
+
+.navigation a {
+	display: none;
+	font-weight: 400;
+	text-align: center;
+	text-decoration: none;
+	color: aliceblue;
+
+}
+.navigation a:hover {
+	background-color: aliceblue;
+	color:rgb(112, 160, 214);
+	font-weight: 700;
+}
+
+.open a {
+	display: block;
+}
+
+main {
+   max-width: 800px;
+    margin: 0 auto;
+}
+
+main h1 {
+
+    text-align: center;
+}
+
+.album {
+    display:grid; 
+    grid-template-columns: 1fr;
+    grid-gap: 25px;
+    place-items: center;
+}
+
+figure img {
+    height: 200px;
+    width: 200px;
+}
+
+figcaption {
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(112, 160, 214);
+    color: aliceblue;
+    text-align: center;
+    padding: 10px;
+	font-size: 20px;
+	font-weight: 400;
+}
