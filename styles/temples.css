@@ -13,6 +13,10 @@ header {
     font-size: 35px;
 }
 
+h1 {
+	font-weight: 600;
+	font-size: 2rem;
+}
 
 #menu {
 	font-size: 1.5rem;
@@ -63,7 +67,7 @@ main {
     margin: 0 auto;
 }
 
-main h1 {
+main h2 {
 
     text-align: center;
 }
