@@ -68,7 +68,3 @@ footer {
     text-align: center;
     font-size: 20px;
 }
-
-.info-weather::after {
-    content: svg;
-}
