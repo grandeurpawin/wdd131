@@ -1,0 +1,31 @@
+@media screen and (min-width:1000px){
+
+    .hero img {
+         background-color: white;
+         position: relative;
+         height: 810px;
+    }
+
+    
+    .info-data {
+        position: absolute;
+        top: 20%;
+        left: 5%;
+        width: 400px;
+        padding-right: 10px;
+    }
+
+    .info-weather {
+        position: absolute;
+        bottom: 20%;
+        right: 10%;
+        width: 400px;
+        padding-right: 10px;
+    }
+
+    section {
+        background-color: white;
+        opacity: 0.8;
+    }
+    
+}

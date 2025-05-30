@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philippines</title>
+    <meta name="description" content="Page about the Philippines, the country where I lived">
+    <meta name="author" content="Grandeur Pawin">
+    <link rel="stylesheet" href="styles/place.css" >
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <script src="scripts/place.js " defer></script>
+</head>
+<body>
+    <header>
+        <h1>Philippines</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/eagle-hero-large.webp" media="(min-width: 1000px)">
+                <img src="images/eagle-hero-small.webp" alt="Philippine Eagle" width="500" height="250">
+            </picture>
+        </div>
+        <section class="info-data">
+            <h2>Data</h2>
+            <ul>
+                <li><strong>Area:</strong><span class="colon"></span>300,000 sq km</li>
+                <li><strong>Population:</strong>114,163,719</li>
+                <li><strong>Capital:</strong>Manila</li>
+                <li><strong>Languages:</strong>Filipino,English</li>
+                <li><strong>Currency:</strong>Philippine Peso</li>
+                <li><strong>Time Zone:</strong>UTC+8</li>
+                <li><strong>Calling Code:</strong>+63</li>
+                <li><strong>Internet TLD:</strong>.ph</li>
+            </ul>
+        </section>
+        <section class="info-weather">
+            <h2>Weather</h2>
+            <ul>
+                <li><strong>Temperatures:</strong>91.7 °F</li>
+                <li><strong>Condition:</strong>Sunshine</li>
+                <li><strong>Wind:</strong>16.1 mph</li>
+                <li><strong>Wind Chill:</strong><span id="windchill"></span></li>
+                
+            </ul>
+        </section>
+    </main>
+    <footer><p>©<span id="currentyear"></span>🎄Grandeur Pawin🎄Philippines</p>
+        <p id="lastModified"></p></footer>
+</body>
+</html>

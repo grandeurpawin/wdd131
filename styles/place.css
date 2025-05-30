@@ -1,0 +1,64 @@
+:root{
+    --background-color: navy;
+    --color: white;
+    --padding: 10px;
+}
+
+* {
+font-family: "IBM Plex Serif", serif;
+}
+
+header {
+    background-color: var(--background-color);
+    color: var(--color);
+    padding: var(--padding);
+    text-align: center;
+    font-size: 20px;
+}
+
+main {
+    width: 100%;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+    background-color:var(--background-color);
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: rgba(231, 226, 226, 0.349);
+    border: 1px solid rgb(245, 239, 239);
+}
+
+h2 {
+    text-align: center;
+}
+
+li strong{
+  display: inline-block;
+  text-align: right;
+  width: 150px;
+  padding: 10px;
+}
+
+.colon {
+  display: inline-block;
+  text-align: left;
+}
+
+ ul {
+    list-style: none;
+}
+
+
+footer {
+    background-color: var(--background-color);
+    color: var(--color);
+    padding: var(--padding);
+    text-align: center;
+    font-size: 20px;
+}
