@@ -38,6 +38,12 @@ h2 {
     text-align: center;
 }
 
+.info-weather img {
+    padding-left: 180px;
+
+}
+
+
 li strong{
   display: inline-block;
   text-align: right;
@@ -61,4 +67,8 @@ footer {
     padding: var(--padding);
     text-align: center;
     font-size: 20px;
+}
+
+.info-weather::after {
+    content: svg;
 }
