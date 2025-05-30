@@ -31,7 +31,7 @@
     .info-weather h2::after {
     content: "☀️";}
 
-    .info-weather img {
+    svg {
         display: none;
     }
 
