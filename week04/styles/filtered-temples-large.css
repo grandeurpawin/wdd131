@@ -1,0 +1,19 @@
+@media screen and (min-width: 900px){
+    .album {
+        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+        grid-gap: 25px;
+        place-items: center;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+		flex-direction: row;
+	}
+
+	.navigation a {
+		display: block;
+	}
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description" content="Temple Album that is responsive in small and large views.">
+    <meta name="author" content="Grandeur Pawin">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..900&display=swap" rel="stylesheet">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button aria-label="click the menu" id="menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#home">Home</a></li>
+                <li><a href class="old">Old</a></li>
+                <li><a href="#new">New</a></li>
+                <li><a href="#large">Large</a></li>
+                <li><a href="#small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Home</h2>
+        <div class="album">
+        </div>
+    </main>
+    <footer><p>©️<span id="currentyear"></span>🎄Grandeur Pawin🎄Philippines</p>
+        <p id="lastModified"></p></footer>
+</body>
+</html>
