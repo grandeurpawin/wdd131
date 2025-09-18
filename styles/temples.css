@@ -7,14 +7,14 @@ header {
     background-color: rgba(5, 38, 100, 0.945);
 }
 
-h2 {
+h1 {
     font-family: var(--heading-font);
     font-size: 2rem;
     color: white;
     padding: 10px;
 }
 
-h1 {
+ h2 {
     text-align: center;
 }
 
