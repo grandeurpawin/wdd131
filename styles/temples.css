@@ -98,6 +98,12 @@ figure {
     text-align: center;
 }
 
+figcaption {
+    font-style: italic;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
 footer{
     background-color: rgba(5, 38, 100, 0.945);
     color: white;
