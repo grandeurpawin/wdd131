@@ -1,0 +1,57 @@
+:root {
+    --heading-font: "PT Serif", serif;
+    --body-font: "Lora", serif;
+}
+
+header {
+    font-family: var(--heading-font);
+    background-color: rgba(5, 38, 100, 0.945);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.hero {
+    background-color:  rgba(5, 38, 100, 0.945);
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    background-color: rgb(114, 41, 41);
+    padding-top: 15px;
+}
+
+.info {
+    background-color: #eee;
+}
+
+.info-data  h2 ,
+.info-weather h2 {
+    font-family: var(--heading-font);
+}
+
+svg {
+    width: 75px;
+    height: 75px;
+}
+
+.info-data , 
+.info-weather {
+    font-family: var(--body-font);
+    font-size: 1.2rem;
+    text-align: center;
+    border-top: 1px solid rgb(231, 229, 229);
+}
+
+.info-weather {
+    padding: 10px;
+}
+
+footer{
+    background-color: rgba(5, 38, 100, 0.945);
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 1rem;
+}

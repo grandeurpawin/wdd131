@@ -1,0 +1,52 @@
+@media screen and (min-width:1000px){
+
+    .hero img {
+         background-color: rgb(114, 41, 41);
+         position: relative;
+         height: 810px;
+    }
+
+    .info-data h2 {
+        background-color: navy;
+        color: white;
+        padding: 10px 0 10px 0;
+        margin-left: -10px;
+    }
+
+    .info-weather h2 {
+        background-color: navy;
+        color: white;
+        padding: 10px 0 10px 0;
+        margin-left: -20px;
+    }
+    
+    .info-data {
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        width: 400px;
+        padding-right: 10px;
+    }
+
+    .info-weather {
+        position: absolute;
+        bottom: 20%;
+        right: 10%;
+        width: 400px;
+        padding-right: 10px;
+    }
+
+    .info-weather h2::after {
+    content: "☀️";
+    }
+
+    svg {
+        display: none;
+    }
+
+    section {
+        background-color: white;
+        opacity: 0.8;
+    }
+    
+}
