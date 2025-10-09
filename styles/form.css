@@ -1,0 +1,112 @@
+:root {
+    --heading-font: "PT Serif", serif;
+    --body-font: "Lora", serif;
+}
+
+header {
+    background-color: rgba(5, 38, 100, 0.945);
+    text-align: center;
+}
+
+h1 {
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    color: #fff;
+    padding: 10px;
+}
+
+.review-form {
+    background-color: #eee;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.review-form fieldset {
+    border: none;
+}
+
+.review-form legend {
+    padding-top: 10px;
+    font-size: 1.3rem;
+}
+
+.review-form label {
+    display: block;
+    font-size: 1.2rem;
+}
+
+input[type="date"],
+input[type="text"],
+.review-form select,
+.review-form textarea {
+    box-sizing: border-box;
+    border: none;
+    background-color: #fff;
+    padding: 1.2rem;
+    width: 100%;
+    max-width: 400px;
+    font-family: var(--body-font);
+    font-size: 1rem;
+}
+
+input[type="radio"] {
+    width: 20px;
+    height: 20px;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 400px;
+}
+
+.rating label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+input[type="checkbox"] {
+width: 20px;
+height:20px;
+margin-right: 20px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    background-color: rgba(5, 38, 100, 0.945);
+    color: #fff;
+    border: none;
+    padding: 1.2rem;
+    margin-bottom: 15px;
+    font-family: var(--body-font);
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: 15px;
+    appearance: none;
+}
+
+.review-form input:required {
+    border-bottom: 4px solid red;
+}
+
+.review-form input:required:valid {
+    border-bottom: 4px solid green;
+}
+
+footer {
+    background-color: rgba(5, 38, 100, 0.945);
+    color: #fff;
+    text-align: center;
+    font-family: var(--body-font);
+    font-size: 1.2rem;
+}
+
+footer p {
+    margin: 0;
+    padding: 10px 0 10px 0;
+}
