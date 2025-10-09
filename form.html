@@ -22,6 +22,7 @@
         <form method="get" action="review.html" class="review-form">
             <fieldset>
                 <legend>Product Name<span class="required"> *</span></legend>
+                <label for="product">Select a Product<span class="required"> *</span></label>
                 <select name="product" id="product" required>
                     <option value="" disabled selected>Select a Product...</option>
                 </select>
@@ -77,10 +78,12 @@
             </fieldset>
             <fieldset>
                 <legend>Written Review<span>(Optional)</span></legend>
+                <label for="writtenReview">Share your experience with the product:</label>
                 <textarea id="writtenReview" name="written-review"></textarea>
             </fieldset>
             <fieldset>
                 <legend>Your Name<span>(Optional)</span></legend>
+                <label for="userName">Name:</label>
                 <input type="text" id="userName" name="user-name" placeholder="Enter your name">
             </fieldset>
 
