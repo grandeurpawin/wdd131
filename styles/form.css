@@ -15,6 +15,27 @@ h1 {
     padding: 10px;
 }
 
+.required {
+    color: rgba(112, 3, 3, 0.952);
+    font-weight: bold;
+}
+
+.required-note,
+.required-note span {
+    text-align: right;
+    animation: fadeIn 1s ease-in;
+    font-size: 1rem;
+    font-family: var(--body-font);
+    color: rgba(112, 3, 3, 0.952);
+    font-weight: bold;
+
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
 .review-form {
     background-color: #eee;
     margin-bottom: 20px;
@@ -63,7 +84,7 @@ input[type="radio"] {
 
 .star-option {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: center;
   font-size: 1.5rem;
 }
