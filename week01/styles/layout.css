@@ -1,0 +1,56 @@
+body {
+    display: grid;
+}
+
+header {
+    background-color: rgb(54, 53, 53);
+}
+
+header p {
+    padding: 10px 0 40px 10px;
+    color: white;
+}
+
+nav {
+    background-color: black;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    height: 400px;
+}
+
+section {
+    background-color: gray;
+}
+
+aside {
+    background-color: #fff;
+}
+
+section p, aside p {
+    padding: 10px;
+}
+
+footer {
+    background-color: rgb(54, 53, 53);
+    color: white;
+    text-align: center;
+    padding: 10px 0 80px;
+}
