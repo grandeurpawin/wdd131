@@ -1,0 +1,169 @@
+:root {
+    --heading-font: 'PT Serif', serif;
+    --body-font: 'Lora', serif;
+    --primary-color: rgba(5, 38, 100, 0.945);
+    --secondary-color: rgb(56, 55, 55);
+    --border-color: #c9c5c5;
+    --font-color: white;
+}
+
+html {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+header, footer{
+    background-color:var(--primary-color);
+    color: var(--font-color);
+    text-align: center;
+}
+
+#course-title {
+    display: block;
+    font-family: var(--heading-font);
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 15px 0 0;
+}
+
+.highlight-name {
+    color: yellow;
+    font-size: 1.2rem;
+}
+
+.website-links {
+    background-color: var(--secondary-color);
+    font-family: var(--body-font);
+}
+
+.website-links ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.website-links ul a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--font-color);
+    padding: 10px;
+}
+
+.website-links ul a:hover {
+    background-color: var(--font-color);
+    color: var(--secondary-color);
+    transition: background-color .6s ease-in-out , color 0.6s ease-in-out;
+    cursor: pointer;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    max-width: 1000px;
+    gap: 10px;
+    margin: 0 auto;
+}
+
+h1 {
+    display: none;
+}
+
+.card {
+    font-family: var(--body-font);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+}
+
+.card h2 {
+    font-family: var(--heading-font);
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--font-color);
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    margin-top: 0;
+}
+
+.introduction {
+    display: grid;
+    grid-template-columns: 7fr 1fr;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.introduction p {
+    line-height: 1.5;
+    margin-right: 10px;
+    font-family: var(--body-font);
+}
+
+.introduction img {
+    width: 125px;
+    height: 175px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+}
+
+.flag-section {
+  display: grid;
+  grid-template-columns: 7fr 1fr;
+  padding: 10px;
+  gap: 20px;
+  font-family: var(--body-font);
+  line-height: 1.5;
+}
+
+.flag-layout {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-right: 30px;
+}
+
+h3 {
+  text-align: center;
+  font-family: var(--heading-font);
+  font-size: 1.5em;
+}
+
+h3::after {
+    content: "";
+    display: block;
+    max-width: 500px;
+    height: .5px;
+    background-color: var(--secondary-color);
+    margin: 0 auto;
+}
+
+.resources {
+    display: flex;
+    align-items: center;
+    height: 500px;
+}
+
+
+footer {
+    font-family: var(--body-font);
+    font-size: 1.2rem;
+}
+
+footer p {
+      margin: 0;
+    }
+
+footer p:first-of-type {
+      margin-top: 10px;
+      padding-top: 10px;
+    }
+
+footer p:last-of-type{
+  padding-bottom: 10px;
+}
+
+footer p:not(:first-of-type) {
+  margin-top: 10px;
+}
