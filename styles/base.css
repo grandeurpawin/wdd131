@@ -50,13 +50,6 @@ header nav ul a {
     padding: 10px;
 }
 
-header nav ul a:hover {
-    background-color: var(--font-color);
-    color: var(--secondary-color);
-    transition: background-color .6s ease-in-out , color 0.6s ease-in-out;
-    cursor: pointer;
-}
-
 main {
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -161,13 +154,12 @@ section nav a {
     font-size: 1.2rem;
     padding: 10px;
 }
-section nav a:hover {
+a:hover {
     background-color: var(--font-color);
     color: var(--secondary-color);
     transition: background-color .6s ease-in-out , color 0.6s ease-in-out;
     cursor: pointer;
 }
-
 
 footer {
     background-color: var(--primary-color);
