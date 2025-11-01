@@ -143,6 +143,7 @@ h3::after {
     display: flex;
     align-items: center;
     height: 500px;
+    line-height: 1.5;
 }
 
 
