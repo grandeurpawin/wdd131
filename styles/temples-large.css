@@ -1,0 +1,30 @@
+@media screen and (min-width: 800px) {
+    #menuButton {
+        display: none;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px;
+    }
+
+    h1 {
+        width: 400px;
+    }
+    nav {
+        width: 800px;
+    }
+    ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    li {
+        display: flex;
+    }
+    .container {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        place-items: center;
+    }
+}
