@@ -7,6 +7,7 @@
 
 
 header {
+    
     background-color: var(--primary-color);
 }
 
@@ -18,8 +19,13 @@ header {
 }
 
  h1 {
+    font-family: var(--heading-font);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 5px;
     font-size: 1.8rem;
     text-align: center;
+
 }
 
 #menuButton {
