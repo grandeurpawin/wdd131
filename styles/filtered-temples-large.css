@@ -1,0 +1,29 @@
+@media screen and (min-width: 800px) {
+    #menuButton {
+        display: none;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px;
+    }
+    nav {
+        width: 800px;
+    }
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    nav li {
+        display: flex;
+    }
+    nav a {
+        width: 100px;
+    }
+    .temple-album {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 20px;
+        place-items: center;
+    }
+}
