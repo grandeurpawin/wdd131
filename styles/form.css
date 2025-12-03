@@ -1,0 +1,143 @@
+:root {
+    --heading-font: 'PT Serif', serif;
+    --body-font: 'Lora', serif;
+    --primary-color: rgba(5, 38, 100, 0.945);
+    --secondary-color: white;
+    --background-color: #eee;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header h1 {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-family: var(--heading-font);
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.prf {
+background-color: var(--background-color);
+max-width: 400px;
+border-radius: 5px;
+}
+
+.indicator {
+    position: absolute;
+    left: 1%;
+}
+
+fieldset {
+    border: none;
+    margin: 1rem;
+}
+
+legend {
+    font-family: var(--heading-font);
+    padding: 1rem 1rem .2rem 0;
+}
+
+.sr-only {
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+    width: 100%;
+    max-width: 400px;
+    height: 44px;
+    font-family: var(--body-font);
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    appearance: none;
+}
+select {
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12'><polygon points='0,0 12,0 6,6' style='fill:black'/></svg>") no-repeat right center;
+    background-size: 10px;
+}
+
+textarea {
+    width: 100%;
+    max-width: 400px;
+    font-family: var(--body-font);
+    border: none;
+    padding: 10px;
+}
+
+.star-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.star {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+input[type="radio"] {
+    transform: scale(1.5);
+    margin-top: .5rem;
+}
+input[type="checkbox"] {
+    transform: scale(1.5);
+    margin:.5rem;
+}
+
+input[type="submit"] {
+    width: 92%;
+    max-width: 400px;
+    margin: .5rem 4% 1.5rem 4%;
+    height: 44px;
+    background-image:linear-gradient(rgba(5, 38, 100, 0.945), rgba(39, 100, 212, 0.945));
+    color: var(--secondary-color);
+    font-family: var(--heading-font);
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 4px rgba(4, 77, 212, 0.945) ;
+}
+
+input[type="submit"]:hover {
+    background-image: linear-gradient(rgba(51, 107, 211, 0.945), rgba(8, 34, 83, 0.945));
+    cursor: pointer;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-family: var(--heading-font);
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.prf input:required,
+.prf select:required {
+    border-bottom: red 4px solid;
+}
+
+.prf input:required:valid,
+.prf select:required:valid {
+    border-bottom: green 4px solid;
+}
+
+.required {
+    color: rgb(134, 16, 16);
+    padding-left: .5rem;
+    font-size: 1.5rem;
+}
+
+.require {
+    color: rgb(134, 16, 16);
+}

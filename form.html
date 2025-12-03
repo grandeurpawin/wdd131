@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="description" content="Creating product review form page using good form design and must be user friendly.">
+    <meta name="author" content="Grandeur Pawin">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html" class="prf">
+            <p class="indicator"><span class="require">*</span> indicates required field</p>
+            <fieldset>
+                <legend>Product Name<span class="required">*</span></legend>
+                <label for="product" class="sr-only">Select the Product</label>
+                <select id="product" name="chooseproduct" required>
+                    <option value="" disabled selected>Select a Product...</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Overall Rating<span class="required">*</span></legend>
+                <div class="star-group">
+                    <div class="star"><input type="radio" name="star-rating" id="star1" value="1" aria-label="1 star" required><label for="star1">&#9734;</label></div>
+                    <div class="star"><input type="radio" name="star-rating" id="star2" value="2" aria-label="2 stars"><label for="star2">&#9734;&#9734;</label></div>
+                    <div class="star"><input type="radio" name="star-rating" id="star3" value="3" aria-label="3 stars"><label for="star3">&#9734;&#9734;&#9734;</label></div>
+                    <div class="star"><input type="radio" name="star-rating" id="star4" value="4" aria-label="4 stars"><label for="star4">&#9734;&#9734;&#9734;&#9734;</label></div>
+                    <div class="star"><input type="radio" name="star-rating" id="star5" value="5" aria-label="5 stars"><label for="star5">&#9734;&#9734;&#9734;&#9734;&#9734;</label></div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Date of Installation<span class="required">*</span></legend>
+                <label for="installedDate" class="sr-only">Installation Date</label>
+                <input type="date" id="installedDate" name="date" required>
+            </fieldset>
+            <fieldset>
+                <legend>Which feature did you find useful in the product?<br>(Check all that apply)</legend>
+                <div class="box-group">
+                    <div class="box"><input type="checkbox" name="features" id="feature1" value="design"><label for="feature1">Design</label></div>
+                    <div class="box"><input type="checkbox" name="features" id="feature2" value="durability"><label for="feature2">Durability</label></div>
+                    <div class="box"><input type="checkbox" name="features" id="feature3" value="ease of use"><label for="feature3">Ease of Use</label></div>
+                    <div class="box"><input type="checkbox" name="features" id="feature4" value="performance"><label for="feature4">Performance</label></div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Written Review<em>(Optional)</em></legend>
+                <label for="writtenReview" class="sr-only">Share your experiences with the product: </label>
+                <textarea id="writtenReview" name="review" rows="5" placeholder="Place your review here"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Your Name<em>(Optional)</em></legend>
+                <label for="userName" class="sr-only">Enter your name: </label>
+                <input type="text" id="userName" name="fullName" placeholder="Grandeur Pawin">
+            </fieldset>
+            
+            <input type="submit" value="Post the Review">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span>🎄Grandeur Pawin🎄Philippines</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
