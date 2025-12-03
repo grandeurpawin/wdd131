@@ -52,7 +52,7 @@ function deleteChapter(chapter) {
 // Get the current visit count from localStorage, or start at 0
 let visitCount = Number(localStorage.getItem('visitCount')) || 0;
 
-// Increase the count by 1 each time the page loads
+// Increases the count by 1 each time the page loads
 visitCount++;
 
 // Save it back to localStorage
