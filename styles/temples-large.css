@@ -11,7 +11,7 @@
             margin: 0;
             height: 70px;
         }
-    .navigation {
+    nav .navigation {
         display: flex;
         justify-content: space-around;
     }
