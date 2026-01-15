@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description" content="A temple album page that features various temples that is responsive in small and larger viewscreens.">
+    <meta name="author" content="Grandeur Pawin">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="scripts/temples.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <p id="templeId">Temple&nbsp;Album</p>
+        <button aria-label="Navigation Menu for Temple Album" id="menuButton"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="home">Home</a></li>
+                <li><a href="old">Old</a></li>
+                <li><a href="new">New</a></li>
+                <li><a href="large">Large</a></li>
+                <li><a href="small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <div class="templeAlbum">
+            <figure>
+                <img src="images/billings_montana_temple.webp" alt="Billings Montana Temple">
+                <figcaption>Billings Montana Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/cebu_philippines_temple.webp" alt="Cebu Philippines Temple">
+                <figcaption>Cebu Philippines Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/manila_philippines_temple.webp" alt="Manila Philippines Temple">
+                <figcaption>Manila Philippines Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/mount_timpanogos_temple.webp" alt="Mount Timpanogos Temple">
+                <figcaption>Mount Timpanogos Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/ogden_city_temple.webp" alt="Ogden City Temple">
+                <figcaption>Ogden City Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/panama_city_temple.webp" alt="Panama City Temple">
+                <figcaption>Panama City Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/payson_utah_temple.webp" alt="Payson Utah Temple">
+                <figcaption>Payson Utah Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/provo_city_center_temple.webp" alt="Provo City Center Temple">
+                <figcaption>Provo City Center Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/salt-lake-temple.webp" alt="Salt Lake Temple">
+                <figcaption>Salt Lake Temple</figcaption>
+            </figure>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span> 🎄Grandeur Pawin🎄Philippines</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

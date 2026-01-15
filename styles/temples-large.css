@@ -1,0 +1,34 @@
+@media screen and (min-width: 800px) {
+    #menuButton {
+        display: none;
+    }
+    header {
+            background-color: var(--primary-color);
+            display: grid;
+            grid-template-columns: 4fr 6fr;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+            height: 70px;
+        }
+    .navigation {
+        display: flex;
+        justify-content: space-around;
+    }
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+        width: 100%;
+    }
+    .navigation li a {
+        text-align: center;
+    }
+    main {
+        display: grid;
+    }
+    .templeAlbum {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        align-items: center;
+        gap: 20px;
+    }
+}
