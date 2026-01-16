@@ -33,27 +33,34 @@ header {
 }
 
 nav ul{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
     list-style-type: none;
     background-color: var(--secondary-color);
 }
 
 nav ul li {
-    padding: 1rem;
+    padding: .2rem;
+    width: 100%;
 }
 
 nav ul li a {
+    display: block;
     padding: 16px;
     font-family: var(--body-font);
     font-size: 1.2rem;
     color: var(--font-color);
     text-decoration: none;
     transition: 0.5s;
+    width: 100%;
 }
 
 nav ul li a:hover, nav ul li a:active {
     background-color: var(--font-color);
     color: var(--secondary-color);
     transition: background-color .6s ease-in-out, color 0.6s ease-in-out;
+    font-weight: bolder;
 }
 
 main {
