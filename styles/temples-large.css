@@ -3,14 +3,17 @@
         display: none;
     }
     header {
-            background-color: var(--primary-color);
-            display: grid;
-            grid-template-columns: 4fr 6fr;
-            align-items: center;
-            padding: 0;
-            margin: 0;
-            height: 70px;
-        }
+        background-color: var(--primary-color);
+        display: grid;
+        grid-template-columns: 4fr 6fr;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        height: 70px;
+    }
+    #templeId.remove {
+        display: flex;
+    }
     nav .navigation {
         display: flex;
         justify-content: space-around;
