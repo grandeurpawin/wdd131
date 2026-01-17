@@ -108,6 +108,7 @@ h1 {
 .templeAlbum figure {
     text-align: center;
     padding: 1rem;
+    background-color: var(--font-color);
     color: var(--primary-color);
 }
 
