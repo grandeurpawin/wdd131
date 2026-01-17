@@ -116,11 +116,11 @@ h1 {
 .templeAlbum figure {
     text-align: center;
     padding: 1rem;
+    color: var(--font-color);
 }
 
 .templeAlbum figcaption {
     font-family: var(--body-font);
-    color: var(--font-color);
     font-size: 1.2rem;
     font-style: italic;
 }
