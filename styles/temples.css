@@ -94,8 +94,8 @@ main {
 h1 {
     text-align: center;
     font-family: var(--heading-font);
-    background: linear-gradient(rgb(139, 60, 60), rgb(172, 32, 32));
-    color: var(--font-color);
+    background-color: var(--font-color);
+    color: var(--primary-color);
     font-size: 1.6rem;
     padding: 1rem;
     font-style: italic;
