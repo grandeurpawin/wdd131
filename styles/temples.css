@@ -93,7 +93,7 @@ main {
 h1 {
     text-align: center;
     font-family: var(--heading-font);
-    background: linear-gradient(rgb(167, 119, 119), rgb(172, 32, 32));
+    background: linear-gradient(rgb(139, 60, 60), rgb(172, 32, 32));
     color: var(--font-color);
     font-size: 1.6rem;
     padding: 1rem;
