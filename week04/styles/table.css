@@ -1,0 +1,36 @@
+body {
+    padding: 1rem;
+}
+
+table {
+    border-collapse: collapse;
+    width: 400px;
+    border: 1px solid rgb(0 0 0 /0.1);
+}
+
+caption {
+    caption-side: bottom;
+}
+
+thead th, tbody td {
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid rgb(0 0 0 /0.1);
+    padding: .3rem;
+}
+
+thead {
+    background-color: #000;
+    color: #fff;
+    th {
+        padding: .5rem;
+    }
+    tr:nth-child(2) {
+        background-color: #404040;
+    }
+    .blank {
+        background-color: #000;
+    }
+}
