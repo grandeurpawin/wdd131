@@ -65,6 +65,8 @@ if (reviewCount) {
 }
 
 const dateInput = document.getElementById("installedDate");
-dateInput.addEventListener("click", () => {
-    dateInput.showPicker?.();
-});
+if (dateInput) {
+    dateInput.addEventListener("click", () => {
+        dateInput.showPicker?.();
+    });
+}
