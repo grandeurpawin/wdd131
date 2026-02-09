@@ -18,6 +18,7 @@ main h2 {
 }
 
 img {
+    display: block;
     height: auto;
     width: 400px;
     padding: 1rem;
