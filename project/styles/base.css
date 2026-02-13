@@ -1,0 +1,354 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --background-color: #F5EFE6;
+    --primary-color: #3B2F2F;
+    --secondary-color: #fff;
+    --heading-font: 'PT Serif', serif;
+    --body-font: 'Lora', serif;
+}
+
+header {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+}
+
+#siteName {
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    font-weight: bolder;
+    font-style: italic;
+    color: var(--primary-color);
+    padding-left: 7rem;
+    height: 100px;
+}
+
+#logo {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+nav ul {
+    align-items: center;
+    list-style-type: none;
+}
+
+.navigation li {
+    display: none;
+}
+
+nav ul li a {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    font-family: var(--heading-font);
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    width: 100%;
+}
+
+nav ul li a:hover, nav ul li a:active {
+    color: var(--background-color);
+    background-color: var(--primary-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#navButton {
+    position: absolute;
+    top: .5rem;
+    right: 1.5rem;
+    background: none;
+    border: none;
+    font-size: 2.2rem;
+    font-weight: bolder;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+#navButton::before {
+    content: "\2630";
+}
+
+#navButton.show::before {
+    content: "\2716";
+}
+
+.show li {
+    display: block;
+    text-align: center;
+}
+
+#siteName.remove {
+    display: none;
+}
+
+main {
+    margin: 0 auto;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    height: 75vh;
+    background: linear-gradient(rgba(59, 47, 47, 0.3), rgba(59, 47, 47, 0.7)), url("../images/katipunan_nature.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--background-color);
+}
+
+.heroContent {
+    max-width: 750px;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-family: var(--heading-font);
+    font-size: 2.5rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-family: var(--body-font);
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+
+.menuButton {
+    display: inline-block;
+    padding: 1rem;
+    font-family: var(--heading-font);
+    font-size: 1.2rem;
+    font-weight: bolder;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menuButton:hover,
+.menuButton:active {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+.welcome {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding:  4rem 2rem;
+    text-align: center;
+}
+
+.welcomeContent {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.featuredDrinks {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.featureContent {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.featureContent p {
+    margin-bottom: 2rem;
+}
+
+.drinkContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+    justify-items: center;
+}
+
+.drink {
+    background-color: var(--secondary-color);
+    border-radius: 15px;
+    padding: 1rem;
+    width: 100%;
+    max-width: 250px;
+}
+
+.drink:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.drink img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.drink h3 {
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+.whyUs {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.whyUsContent {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.whyUsContent ul {
+    list-style-type: none;
+}
+
+.whyUsContent ul li {
+    font-family: var(--body-font);
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.locationAndHours {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.locationAndHoursContent {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.contactButton {
+    display: inline-block;
+    padding: 1rem;
+    margin-top: 1rem;
+    font-family: var(--heading-font);
+    font-size: 1.2rem;
+    font-weight: bolder;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contactButton:hover,
+.contactButton:active {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.testimonials {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+    justify-items: center;
+}
+
+.testimonial {
+    background-color: var(--background-color);
+    border-radius: 15px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 500px;
+    line-height: 1.5rem;
+    font-family: var(--body-font);
+    font-size: 1.5rem;
+}
+
+.welcome h2, .featuredDrinks h2, .whyUs h2, .locationAndHours h2, .testimonials h2 {
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.welcome p, .featuredDrinks p, .locationAndHours p {
+    font-family: var(--body-font);
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2rem;
+}
+footer {
+    display: flex;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    padding: 1rem;
+    font-family: var(--body-font);
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+p {
+    text-align: center;
+}
+
+@media (min-width: 600px) {
+    #navButton {
+        display: none;
+    }
+    header {
+        display: grid;
+        grid-template-columns: 3fr 5fr;
+        align-items: center;
+        height: 100px;
+    }
+    #siteName.remove {
+        display: flex;
+    }
+    nav .navigation {
+        display: flex;
+        justify-content: space-around;
+    }
+    nav .navigation li {
+        display: block;
+        flex: 1 1 100%;
+        width: 100%
+    }
+}
