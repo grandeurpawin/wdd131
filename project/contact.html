@@ -3,19 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Tara: Kape sa Katipunan</title>
-    <meta name="description"
-        content="Welcome to Tara: Kape sa Katipunan, a local coffee shop that offers a peaceful and welcoming environment for coffee lovers.">
+    <title> Contact Tara: Kape sa Katipunan | Location & Hours</title>
+    <meta name="description" content="Visit Tara: Kape sa Katipunan in Katipunan, Arakan. Find our location, business hours, contact details, and share your coffee experience with us.">
     <meta name="author" content="Grandeur Pawin">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
     <script src="scripts/base.js" defer></script>
 </head>
-
 <body>
     <header>
         <img src="images/katipunan_coffee_logo.jpg" alt="Tara: Kape sa Katipunan Logo" id="logo">
@@ -24,15 +20,95 @@
         <nav>
             <ul class="navigation">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="menu.html">Menu</a></li>
                 <li><a href="about.html">About&nbsp;Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
                 <li><a href="contact.html">Contact&nbsp;Us</a></li>
             </ul>
         </nav>
     </header>
-    <main></main>
+    <main>
+        <section class="contactIntro section sectionLight">
+            <div class="contactIntroContent container">
+            <h1>Contact Us</h1>
+            <p>We love to hear from you! Whether it is questions, feedback, or just a warm hello, reach out and we will get back to you promptly.</p>
+            </div>
+        </section>
+        <section class="contactContainer">
+            <div class="contactLeft">
+                <h2>Contact Information</h2>
+                <div class="infoCard">
+                    <h3>Location</h3>
+                    <p>Katipunan, Arakan, North Cotabato</p>
+                </div>
+                <div class="infoCard">
+                    <h3>Call Us</h3>
+                    <p>+639667652860</p>
+                </div>
+                <div class="infoCard">
+                    <h3>Email</h3>
+                    <p>tarakapesakatipunan@gmail.com</p>
+                </div>
+                <div class="infoCard">
+                    <h3>Hours</h3>
+                    <p>Mon - Sat 8:00 AM - 4:00 PM</p>
+                </div>
+            </div>
+            <div class="contactRight">
+                <h2>Find Us on the Map</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3956.386995545502!2d125.2304921757885!3d7.422352612064222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zN8KwMjUnMjAuNSJOIDEyNcKwMTMnNTkuMCJF!5e0!3m2!1sen!2sph!4v1771158777097!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"  title="Google Map showing Tara: Kape sa Katipunan location"></iframe>
+            </div>
+        </section>
+        <form id="myForm" method="get" action="review.html" class="prf">
+            <h2>Leave a Review</h2>
+            <fieldset>
+                <legend>Product Name</legend>
+                <label for="coffeeMenuSelection" class="screenReader">Choose Product</label>
+                <select id="coffeeMenuSelection" name="coffee" required>
+                    <option value="" disabled selected>Select a Product ...</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Overall Rating</legend>
+                <div class="starRating">
+                    <div class="star"><input type="radio" id="star1" name="starRating" value="1" required><label for="star1">&#9734;</label></div>
+                    <div class="star"><input type="radio" id="star2" name="starRating" value="2" required><label for="star2">&#9734;&#9734;</label></div>
+                    <div class="star"><input type="radio" id="star3" name="starRating" value="3" required><label for="star3">&#9734;&#9734;&#9734;</label></div>
+                    <div class="star"><input type="radio" id="star4" name="starRating" value="4" required><label for="star4">&#9734;&#9734;&#9734;&#9734;</label></div>
+                    <div class="star"><input type="radio" id="star5" name="starRating" value="5" required><label for="star5">&#9734;&#9734;&#9734;&#9734;&#9734;</label></div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Date of Visit</legend>
+                <label for="installedDate" class="screenReader">Installation Date</label>
+                <input type="date" id="installedDate" name="dateOfInstallation" required>
+            </fieldset>
+            <fieldset>
+                <legend>What did you enjoy during your visit? <br>(Check all that apply)</legend>
+                <div class="features">
+                    <div class="productFeatures"><input type="checkbox" id="feat1" name="featuresOfProduct" value="ambiance"><label for="feat1">Ambiance</label></div>
+                    <div class="productFeatures"><input type="checkbox" id="feat2" name="featuresOfProduct" value="presentation"><label for="feat2">Presentation</label></div>
+                    <div class="productFeatures"><input type="checkbox" id="feat3" name="featuresOfProduct" value="service"><label for="feat3">Service</label></div>
+                    <div class="productFeatures"><input type="checkbox" id="feat4" name="featuresOfProduct" value="taste"><label for="feat4">Taste</label></div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Written Review <em>(Optional)</em></legend>
+                <label for="review" class="screenReader">Write your review</label>
+                <textarea name="writeReview" id="review" rows="7" placeholder="Write your review here"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Your Name <em>(Optional)</em></legend>
+                <label for="userName" class="screenReader">User's Name</label>
+                <input type="text" id="userName" name="userName" placeholder="Grandeur Pawin" autocomplete="off">
+            </fieldset>
+            <input type="submit" value="Post Review" class="button buttonDark">
+        </form>
+    </main>
     <footer>
-        <p>&copy; 2026 Tara: Kape sa Katipunan. <br>All rights reserved.</p>
+        <p>&copy; 2026 Tara: Kape sa Katipunan. <br>All rights reserved.
+            <br>
+            <a href="references.html">References</a>
+        </p>
     </footer>
 </body>
 </html>

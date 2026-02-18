@@ -1,3 +1,4 @@
+/* ----------Global CSS----------*/
 * {
     box-sizing: border-box;
     margin: 0;
@@ -12,6 +13,108 @@
     --body-font: 'Lora', serif;
 }
 
+body {
+    font-family: var(--body-font);
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: var(--primary-color);
+}
+
+/*----------Reusable CSS----------*/
+
+.heroSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    height: 75vh;
+}
+
+.container {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.section {
+    color: var(--primary-color);
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.sectionLight {
+    background-color: var(--secondary-color);
+}
+
+.sectionDark {
+    background-color: var(--background-color);
+}
+
+.hero h1,
+.menuIntro h1,
+.contactIntro h1,
+.review h1,
+.aboutHero h1 {
+    font-family: var(--heading-font);
+    font-size: 2.5rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+section h2, .prf h2 {
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+section h3 {
+    font-family: var(--heading-font);
+    font-style: italic;
+    font-size: 1.7rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.button {
+    display: inline-block;
+    padding: 1rem;
+    font-family: var(--heading-font);
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.buttonDark {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+.buttonLight {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+}
+
+.buttonDark:hover,
+.buttonLight:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+.buttonDark:hover {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+}
+
+.buttonLight:hover {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+/*----------Header----------*/
 header {
     background-color: var(--background-color);
     color: var(--primary-color);
@@ -20,7 +123,7 @@ header {
 #siteName {
     display: flex;
     align-items: center;
-    justify-content:flex-start;
+    justify-content: flex-start;
     font-family: var(--heading-font);
     font-size: 2rem;
     font-weight: bolder;
@@ -37,8 +140,7 @@ header {
     border-radius: 50%;
 }
 
-nav ul {
-    align-items: center;
+.navigation {
     list-style-type: none;
 }
 
@@ -46,7 +148,7 @@ nav ul {
     display: none;
 }
 
-nav ul li a {
+nav a {
     display: block;
     padding: 1rem;
     text-align: center;
@@ -59,7 +161,8 @@ nav ul li a {
     width: 100%;
 }
 
-nav ul li a:hover, nav ul li a:active {
+nav ul li a:hover,
+nav ul li a:active {
     color: var(--background-color);
     background-color: var(--primary-color);
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -94,18 +197,17 @@ nav ul li a:hover, nav ul li a:active {
     display: none;
 }
 
+
+/*----------Main----------*/
 main {
     margin: 0 auto;
 }
 
+/*----------Home HTML---------- */
+
+/*----------Hero Section----------*/
 .hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    position: relative;
-    height: 75vh;
-    background: linear-gradient(rgba(59, 47, 47, 0.3), rgba(59, 47, 47, 0.7)), url("../images/katipunan_nature.webp");
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url("../images/katipunan_nature.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -113,63 +215,15 @@ main {
 }
 
 .heroContent {
-    max-width: 750px;
     padding: 20px;
 }
 
-.hero h1 {
-    font-family: var(--heading-font);
-    font-size: 2.5rem;
-    font-style: italic;
-    margin-bottom: 1rem;
-}
-
-.hero p {
-    font-family: var(--body-font);
-    font-size: 1.5rem;
-    font-weight: 400;
+.hero p,
+.aboutHero p {
     margin-bottom: 1.5rem;
 }
 
-.menuButton {
-    display: inline-block;
-    padding: 1rem;
-    font-family: var(--heading-font);
-    font-size: 1.2rem;
-    font-weight: bolder;
-    background-color: var(--background-color);
-    color: var(--primary-color);
-    border: none;
-    border-radius: 30px;
-    text-decoration: none;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.menuButton:hover,
-.menuButton:active {
-    background-color: var(--primary-color);
-    color: var(--background-color);
-}
-
-.welcome {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-    padding:  4rem 2rem;
-    text-align: center;
-}
-
-.welcomeContent {
-    max-width: 750px;
-    margin: 0 auto;
-}
-
-.featuredDrinks {
-    background-color: var(--background-color);
-    color: var(--primary-color);
-    padding: 4rem 2rem;
-    text-align: center;
-}
-
+/*----------Featured Drinks Section----------*/
 .featureContent {
     max-width: 1000px;
     margin: 0 auto;
@@ -193,6 +247,9 @@ main {
     padding: 1rem;
     width: 100%;
     max-width: 250px;
+    opacity: 1;
+    animation: fadeIn 0.3s ease forwards;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .drink:hover {
@@ -208,147 +265,429 @@ main {
     margin-bottom: 1rem;
 }
 
-.drink h3 {
-    font-family: var(--heading-font);
-    font-size: 1.5rem;
-    font-style: italic;
-    margin-bottom: 0.5rem;
-}
-
-.whyUs {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-    padding: 4rem 2rem;
-    text-align: center;
-}
-
-.whyUsContent {
-    max-width: 750px;
-    margin: 0 auto;
-}
-
+/*----------WhyUs Section----------*/
 .whyUsContent ul {
     list-style-type: none;
 }
 
 .whyUsContent ul li {
-    font-family: var(--body-font);
-    font-size: 1.5rem;
-    font-weight: 400;
-    line-height: 1.2rem;
     margin-bottom: 1rem;
 }
 
-.locationAndHours {
-    background-color: var(--background-color);
-    color: var(--primary-color);
-    padding: 4rem 2rem;
-    text-align: center;
-}
 
-.locationAndHoursContent {
-    max-width: 750px;
-    margin: 0 auto;
-}
-
-.contactButton {
-    display: inline-block;
-    padding: 1rem;
-    margin-top: 1rem;
-    font-family: var(--heading-font);
-    font-size: 1.2rem;
-    font-weight: bolder;
-    background-color: var(--primary-color);
-    color: var(--background-color);
-    border: none;
-    border-radius: 30px;
-    text-decoration: none;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.contactButton:hover,
-.contactButton:active {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-}
-
-.testimonials {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-    padding: 4rem 2rem;
-    text-align: center;
-}
-
-.testimonial-grid {
+/*----------Testimonials Section----------*/
+.testimonial-grid,
+.visionMissionContent,
+.coreValuesContainer {
     display: grid;
-    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
     margin-top: 2rem;
     justify-items: center;
 }
 
-.testimonial {
+.testimonial,
+.values {
     background-color: var(--background-color);
     border-radius: 15px;
     padding: 2rem;
     width: 100%;
     max-width: 500px;
-    line-height: 1.5rem;
-    font-family: var(--body-font);
-    font-size: 1.5rem;
 }
 
-.welcome h2, .featuredDrinks h2, .whyUs h2, .locationAndHours h2, .testimonials h2 {
+/*----------About HTML----------*/
+
+.aboutHero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url("../images/about_hero_content.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--background-color);
+}
+
+.aboutHeroContent {
+    padding: 20px;
+}
+
+.vision,
+.mission {
+    background-color: var(--secondary-color);
+    padding: .5rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    animation: fadeIn 0.3s ease forwards;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vision:hover,
+.mission:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+/*----------Menu HTML----------*/
+
+/*----------Buttons----------*/
+.menuFilters {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.menuFilters button {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    border-radius: 5px;
+    cursor: pointer;
     font-family: var(--heading-font);
-    font-size: 2rem;
     font-style: italic;
+    font-weight: bold;
+    font-size: 1.4rem;
+    transition: background-color 0.3s ease;
+}
+
+.menuFilters button:hover {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+}
+
+/*----------Coffee Menu Grid----------*/
+.coffeeMenu {
+    display: grid;
+    gap: 4rem;
+    padding: 2rem;
+    grid-template-columns: repeat(auto-fit, 350px);
+    justify-content: center;
+}
+
+/*---------- Coffee Cards----------*/
+.coffeeCard {
+    background-color: var(--background-color);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    opacity: 0;
+    animation: fadeIn 0.3s ease forwards;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.coffeeCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(59, 47, 47, 0.2);
+}
+
+/* Image Wrapper for padding*/
+.imageWrapper {
+    padding: 15px;
+}
+
+.imageWrapper img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+    display: block;
+}
+
+/* Card Content */
+.cardContent {
+    padding: 15px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--background-color);
+}
+
+.cardContent .description {
+    flex: 1;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.cardContent .price {
+    font-family: var(--heading-font);
+    font-weight: bold;
+    color: var(--primary-color);
+    font-size: 1.3rem;
+}
+
+/* Badges */
+.badges {
     margin-bottom: 1rem;
 }
 
-.welcome p, .featuredDrinks p, .locationAndHours p {
+.badge {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: .5rem;
+    margin-right: 4px;
+    border-radius: 5px;
+    font-family: var(--heading-font);
+    font-size: 1.2rem;
+}
+
+/*-----------Contact HTML----------*/
+
+/*----------Contact Container----------*/
+.contactContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    width: 90%;
+    transition: box-shadow 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.contactContainer:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+.contactLeft,
+.contactRight {
+    flex: 1 1 400px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(59, 47, 47, 0.5);
+}
+
+.contactLeft h2,
+.contactRight h2 {
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    font-style: italic;
+    color: var(--primary-color);
+    text-align: center;
+    padding: 1rem 1rem 0 1rem;
+}
+
+.contactRight h2 {
+    padding: 1rem 0 1rem 0;
+}
+
+/*----------Info Cards----------*/
+.infoCard {
+    background-color: var(--background-color);
+    padding: 1rem;
+    border-left: 5px solid var(--primary-color);
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    margin: 1rem;
+}
+
+/*----------Right Column: Map----------*/
+.contactRight iframe {
+    flex: 1;
+    width: 100%;
+    min-height: 400px;
+    border: none;
+    border-radius: 25px;
+    padding: 1rem;
+}
+
+/*----------Form----------*/
+.prf {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    margin: 4rem auto 2rem auto;
+    padding: 2.5rem;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    max-width: 1200px;
+    width: 90%;
+    opacity: 0;
+    animation: fadeIn 0.3s ease forwards;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.prf:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    transform: translateY(-2px);
+}
+
+fieldset {
+    margin: 1rem;
+    padding: .5rem;
+    border: none;
+}
+
+legend {
+    font-family: var(--heading-font);
+    font-style: italic;
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.screenReader {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    display: block;
+    width: 100%;
+    height: 50px;
+    padding: .5rem;
+    appearance: none;
+    font-family: var(--body-font);
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(59, 47, 47, 0.15);
+}
+
+select {
+    background: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 9 L12 15 L18 9' stroke='black' stroke-width='3' fill='none' /%3E%3C/svg%3E") no-repeat right 1rem center;
+    background-size: 25px;
+    background-color: white;
+}
+
+input[type="checkbox"] {
+    transform: scale(2);
+    margin: 1rem 1rem 0 1rem;
+    color: var(--primary-color);
+}
+
+input[type="radio"] {
+    transform: scale(2);
+    margin-top: .5rem;
+    color: var(--primary-color);
+}
+
+textarea {
+    height: auto;
+}
+
+.starRating label,
+.features label {
     font-family: var(--body-font);
     font-size: 1.5rem;
-    font-weight: 400;
-    line-height: 2rem;
 }
+
+.starRating {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.star {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+select:required,
+input:required {
+    border-bottom: 3px solid rgb(185, 34, 34);
+}
+
+select:required:valid,
+input:required:valid {
+    border-bottom: 3px solid rgb(24, 95, 24);
+}
+
+/*----------Review HTML---------- */ 
+
+.review {
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/*----------Footer----------*/
 footer {
     display: flex;
     background-color: var(--background-color);
     color: var(--primary-color);
     justify-content: center;
     align-items: center;
+    text-align: center;
     height: 100px;
     padding: 1rem;
-    font-family: var(--body-font);
-    font-size: 1.2rem;
+}
+
+footer p {
+    font-size: 1.3rem;
     font-style: italic;
     font-weight: bolder;
 }
 
-p {
-    text-align: center;
-}
-
+/*----------Query for tablets and larger screens----------*/
 @media (min-width: 600px) {
     #navButton {
         display: none;
     }
+
     header {
         display: grid;
         grid-template-columns: 3fr 5fr;
         align-items: center;
         height: 100px;
     }
+
     #siteName.remove {
         display: flex;
     }
+
     nav .navigation {
         display: flex;
         justify-content: space-around;
     }
+
     nav .navigation li {
         display: block;
         flex: 1 1 100%;
-        width: 100%
+        width: 100%;
+    }
+
+    .prf {
+        max-width: 1200px;
+        margin: 0 auto 2rem auto;
+    }
+
+    input[type="submit"] {
+        width: 92%;
+        margin: 0 2% 0 4%;
     }
 }
