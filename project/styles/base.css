@@ -643,12 +643,12 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 100px;
+    height: auto;
     padding: 1rem;
 }
 
 footer p {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-style: italic;
     font-weight: bolder;
 }
